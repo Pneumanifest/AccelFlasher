@@ -47,12 +47,11 @@ create_config_file() {
     local accel_chip=$3
 
     cat <<EOF > "$config_file"
-# This file contains common pin mappings for the bigtreetech $accel_chip v1.0
+# This file contains common pin mappings for the bigtreetech $accel_chip
 # To use this config, the firmware should be compiled for the
 # RP2040 with "USB"
-# The micro-controller will be used to control the components on the nozzle.
+# The micro-controller will be used to control the components.
 
-# See docs/Config_Reference.md for a description of parameters.
 
 [mcu btt_$accel_chip]
 serial: $serial
@@ -76,18 +75,16 @@ update_printer_cfg() {
     local accel_chip=$1
     local printer_cfg_file=~/printer_data/config/printer.cfg
 
-    # Remove existing input shaper section
-    sed -i '/### Input Shaper ###/,/###############/d' "$printer_cfg_file"
-
-    # Include the correct accel_chip.cfg
-    sed -i "1i [include $accel_chip.cfg]" "$printer_cfg_file"
-
+    sed -i "1i ### Input Shaper ###" "$printer_cfg_file"
+    # Add the include header for the new accelerometer file
+    sed -i "2i [include $accel_chip.cfg]" "$printer_cfg_file"
     # Add the input shaper section
     sed -i "/\[include $accel_chip.cfg\]/a [input_shaper]" "$printer_cfg_file"
     sed -i "/input_shaper/a shaper_type_x = mzv" "$printer_cfg_file"
     sed -i "/shaper_type_x/a shaper_freq_x = 57.0" "$printer_cfg_file"
     sed -i "/shaper_freq_x/a shaper_type_y = mzv" "$printer_cfg_file"
     sed -i "/shaper_type_y/a shaper_freq_y = 32.8" "$printer_cfg_file"
+    sed -i "/shaper_freq_y/a ################" "$printer_cfg_file"
     echo -e "	${GREEN}${BOLD}printer.cfg file updated successfully.${NC}"
 }
 
