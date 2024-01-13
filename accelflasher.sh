@@ -80,9 +80,9 @@ update_printer_cfg() {
     # Add the input shaper section
     sed -i "/\[include $accel_chip.cfg\]/a [input_shaper]" "$printer_cfg_file"
     sed -i "/input_shaper/a shaper_type_x = mzv" "$printer_cfg_file"
-    sed -i "/shaper_type_x/a shaper_freq_x = 57.0" "$printer_cfg_file"
+    sed -i "/shaper_type_x/a shaper_freq_x = 0" "$printer_cfg_file"
     sed -i "/shaper_freq_x/a shaper_type_y = mzv" "$printer_cfg_file"
-    sed -i "/shaper_type_y/a shaper_freq_y = 32.8" "$printer_cfg_file"
+    sed -i "/shaper_type_y/a shaper_freq_y = 0" "$printer_cfg_file"
     sed -i "/shaper_freq_y/a ################" "$printer_cfg_file"
     echo -e "	${GREEN}${BOLD}printer.cfg file updated successfully.${NC}"
 }
