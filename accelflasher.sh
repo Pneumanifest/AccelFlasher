@@ -75,7 +75,6 @@ update_printer_cfg() {
     local printer_cfg_file=~/printer_data/config/printer.cfg
 
     sed -i "1i ### Input Shaper ###" "$printer_cfg_file"
-    sed -i "3i # Make sure to run SHAPER_CALIBRATE for your machine to update the following placeholder values." "$printer_cfg_file"
     # Add the include header for the new accelerometer file
     sed -i "2i [include $accel_chip.cfg]" "$printer_cfg_file"
     # Add the input shaper section
