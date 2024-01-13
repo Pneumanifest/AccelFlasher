@@ -178,7 +178,8 @@ new_device_serial=""
 while [ -z "$new_device_serial" ] && [ "$retry_count" -lt 3 ]; do
     echo -e ""
     prompt_user "	Now let's check for a new device serial..."
-    prompt_user "	First, I need you to unplug the device you just flashed. This step is important."
+    prompt_user "	This step is important to find the new serial."
+    prompt_user "	First, I need you to unplug the device you just flashed."
     read -p "	Please unplug the USB device and press Enter when done."
     connected_boards_before=$(ls /dev/serial/by-id/*)
     echo -e ""
