@@ -1,5 +1,5 @@
 # AccelFlasher
-## Make a backup of your .cfg files just in case. Its smart to have a backup anyway, so just do it. 
+## Make a backup of your .cfg files before continuing, just in case. Its smart to have a backup anyway, so just do it. 
 
 ### What is this?
 A simple script to flash and set up Bigtreetech LIS2DW v1 and ADXL345 v2 accelerometers.
