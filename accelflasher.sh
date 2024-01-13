@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # ANSI escape codes for text styles and colors
 BOLD='\033[1m'
