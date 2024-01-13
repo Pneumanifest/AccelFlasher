@@ -25,7 +25,7 @@ Start AccelFlasher by running the next command:
 * **When the Klipper Firmware Config opens configure it like this image.** \
 ![image](https://github.com/Pneumanifest/AccelFlasher/assets/117918822/56ab4f42-618f-433d-a9ad-8b374dfeab7f)
 
-* **Remember to run SHAPER_CALIBRATE for CoreXY or SHAPER_CALIBRATE AXIS=X SHAPER_CALIBRATE AXIS=Y for bed slingers wht the sensor in the right place.** 
-* **It is also importaint to set up the axes_map: x,z,y to match your sensor's orientation.** 
+* **Remember to run SHAPER_CALIBRATE for CoreXY or SHAPER_CALIBRATE AXIS=X and SHAPER_CALIBRATE AXIS=Y for bed slingers with the sensor in the right place.** 
+* **It is also importaint to set up the axes_map: x,z,y to match your sensor's orientation. Update that every time you move the sensor position.** 
 
  
