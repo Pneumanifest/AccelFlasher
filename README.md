@@ -28,4 +28,6 @@ Start AccelFlasher by running the next command:
 * **Remember to run SHAPER_CALIBRATE for CoreXY or SHAPER_CALIBRATE AXIS=X and SHAPER_CALIBRATE AXIS=Y for bed slingers with the sensor in the right place.** 
 * **It is also importaint to set up the axes_map: x,z,y to match your sensor's orientation. Update that every time you move the sensor position.** 
 
- 
+## Affiliate Links to the sensor modules.
+*  [BTT - ADXL345 v2](https://shareasale.com/r.cfm?b=1890927&u=3691202&m=118144&urllink=biqu%2Eequipment%2Fproducts%2Fadxl%2D345%2Daccelerometer%2Dboard%2Dfor%2D36%2Dstepper%2Dmotors&afftrack=ADXL345%20V2)
+*  [BTT - LIS2DW V1](https://shareasale.com/r.cfm?b=1890927&u=3691202&m=118144&urllink=biqu%2Eequipment%2Fproducts%2Fadxl%2D345%2Daccelerometer%2Dboard%2Dfor%2D36%2Dstepper%2Dmotors%3Fvariant%3D40446852759650&afftrack=LIS2DW%20V1)
