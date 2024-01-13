@@ -1,5 +1,4 @@
 # AccelFlasher
-## This is a work in progress, but it's working as expected so far. 
 ## Make a backup of your .cfg files just in case. Its smart to have a backup anyway, so just do it. 
 
 ### What is this?
