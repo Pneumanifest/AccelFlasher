@@ -9,7 +9,7 @@ It includes an option to make the required .cfg file changes makeing the process
 ** Disclaimer: Usage of this script happens at your own risk!**
 
 * **Step 1:** \
-git is required to download this repo to your machine. Use the following command if you are unsure if you have that installed.
+git is required to download this repo to your machine. Use the following command if you are unsure that you have it installed.
 
 ```shell
 sudo apt-get update && sudo apt-get install git -y
