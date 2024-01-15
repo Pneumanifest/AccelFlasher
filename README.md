@@ -6,7 +6,7 @@ A simple script to flash and set up Bigtreetech LIS2DW v1 and ADXL345 v2 acceler
 It includes an option to make the required .cfg file changes makeing the process near fully automated.
 
 ### Download and use AccelFlasher
-** Disclaimer: Usage of this script happens at your own risk!**
+** Disclaimer: Use this at your own risk! I am not responsible for any loss data.**
 
 * **Step 1:** \
 git is required to download this repo to your machine. Use the following command if you are unsure that you have it installed.
