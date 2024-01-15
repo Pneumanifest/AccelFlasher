@@ -19,7 +19,7 @@ cd ~ && git clone https://github.com/Pneumanifest/AccelFlasher.git
 Start AccelFlasher by running the next command:
 
 ```shell
-./AccelFlasher/accelflasher.sh
+./~/AccelFlasher/accelflasher.sh
 ```
 * **When the Klipper Firmware Config opens configure it like this image.** \
 ![image](https://github.com/Pneumanifest/AccelFlasher/assets/117918822/56ab4f42-618f-433d-a9ad-8b374dfeab7f)
