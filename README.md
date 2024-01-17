@@ -5,6 +5,8 @@
 A simple script to flash and set up Bigtreetech LIS2DW v1 and ADXL345 v2 accelerometers.
 It includes an option to make the required .cfg file changes makeing the process near fully automated.
 
+### See it in action https://youtu.be/B0Pi_b7ekBg
+
 ### Download and use AccelFlasher
 ** Disclaimer: Use this at your own risk! I am not responsible for any loss data.**
 
