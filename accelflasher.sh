@@ -108,7 +108,7 @@ echo -e "	${GREEN}${BOLD}numpy installed successfully.${NC}"
 
 # Step 2: Set up firmware for your device
 prompt_user "	Now let's set up the firmware..."
-prompt_user "	In the next step, I will take you to the menu config. Enter the info for your board. Press Q then Y and enter when done."
+prompt_user "	In the next step, I will take you to the menu config. Enter the info for your board. Press Q then Y when done."
 read -p "	Press Enter when ready..."
 cd ~/klipper
 make menuconfig
